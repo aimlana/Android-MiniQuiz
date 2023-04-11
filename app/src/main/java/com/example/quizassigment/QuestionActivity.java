@@ -58,7 +58,7 @@ public class QuestionActivity extends AppCompatActivity {
         }
 
 
-        if ( score > user.BestScore){
+        if (score > user.BestScore){
             user.BestScore = score;
         }
 
@@ -89,7 +89,7 @@ public class QuestionActivity extends AppCompatActivity {
         binding.ansB.setText(quiz.opsi[1]);
         binding.ansC.setText(quiz.opsi[2]);
         binding.ansD.setText(quiz.opsi[3]);
-        binding.tvTitle.setText("Question " + (currentQuestionIndex + 1));
+        binding.tvTitle.setText("Question " + (currentQuestionIndex + 1) + " of 5");
     }
 
 }
