@@ -9,12 +9,12 @@ import com.google.android.material.imageview.ShapeableImageView;
 public class User implements Parcelable {
 
     String name;
-    int Score;
+    int score;
     int BestScore = 0;
 
     protected User(Parcel in) {
         name = in.readString();
-        Score = in.readInt();
+        score = in.readInt();
         BestScore = in.readInt();
     }
     public User(){
@@ -41,7 +41,7 @@ public class User implements Parcelable {
     @Override
     public void writeToParcel(@NonNull Parcel parcel, int i) {
         parcel.writeString(name);
-        parcel.writeInt(Score);
+        parcel.writeInt(score);
         parcel.writeInt(BestScore);
     }
 }

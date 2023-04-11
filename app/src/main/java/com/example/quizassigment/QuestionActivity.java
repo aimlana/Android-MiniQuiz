@@ -62,7 +62,7 @@ public class QuestionActivity extends AppCompatActivity {
             user.BestScore = score;
         }
 
-        user.Score = score;
+        user.score = score;
         currentQuestionIndex++;
 
         button.postDelayed(() -> loadNewQuestion(), 1000);
