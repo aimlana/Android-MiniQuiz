@@ -20,7 +20,7 @@ public class ResultActivity extends AppCompatActivity {
 
         user = getIntent().getParcelableExtra(QuestionActivity.EXSTRA_USER);
 
-        binding.tvScore.setText(Integer.toString(user.score));
+        binding.tvScore.setText(Integer.toString(user.Score));
         binding.tvBestScore.setText(Integer.toString(user.BestScore));
         binding.btnBack.setOnClickListener(v -> {
             Intent intent = new Intent(this, MainActivity.class);
