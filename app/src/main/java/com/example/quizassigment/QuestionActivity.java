@@ -45,7 +45,7 @@ public class QuestionActivity extends AppCompatActivity {
 
     }
 
-    public void onClick(View view){
+    public void onClick(View view) {
         Button button = (Button) view;
         selectedAnswer = button.getText().toString();
         int jawabanBenar = quiz.getJawabanBenar();
@@ -53,7 +53,7 @@ public class QuestionActivity extends AppCompatActivity {
         if (selectedAnswer.equals(quiz.getPilihanBenar(jawabanBenar))){
             score += quiz.bobot;
             button.setBackgroundColor(Color.parseColor("#4AFF50"));
-        }else {
+        } else {
             button.setBackgroundColor(Color.parseColor("#FF4A4A"));
         }
 
