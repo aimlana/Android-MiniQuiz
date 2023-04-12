@@ -43,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
 
             if (inputNama.isEmpty()) {
                 binding.etName.setError("Nama tidak boleh kosong");
-                return;}
+                return;
+            }
             if (user.name == null) {
                 binding.tvName.setText(inputNama);
                 binding.tvBestScore.setText("Best Score : " + user.BestScore);
