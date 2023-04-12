@@ -17,9 +17,7 @@ public class User implements Parcelable {
         Score = in.readInt();
         BestScore = in.readInt();
     }
-    public User(){
-
-    }
+    public User() { }
 
     public static final Creator<User> CREATOR = new Creator<User>() {
         @Override
